@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 //closure
 Route::get('/profil', function(){
-    return "ini adalah profil siswa";
+    //return "ini adalah profil siswa";
 })->name('profil');
 
 // route name
@@ -37,3 +37,14 @@ Route::get("/tescontroller", "TesController@show");
 
 //resource
 Route::resource('siswa', "SiswaController");
+
+Route::get('/home', function(){
+   return view('home');
+});
+
+Route::get('/about', function(){
+   return view('about');
+});
+
+
+
